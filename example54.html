@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let studentsData = [
+        ["Jack", 24],
+        ["Sara", 23],
+      ];
+
+      // looping outer array elements
+      for (let i = 0; i < studentsData.length; i++) {
+        // get the length of the inner array elements
+        let innerArrayLength = studentsData[i].length;
+
+        // looping inner array elements
+        for (let j = 0; j < innerArrayLength; j++) {
+          console.log(studentsData[i][j]);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create multiple objects with constructor function</title>
+  </head>
+  <body>
+    <script>
+      function Person() {
+        (this.name = "john"),
+          (this.age = 23),
+          (this.greet = function () {
+            console.log("hello");
+          });
+      }
+
+      const person1 = new Person();
+      const person2 = new Person();
+
+      //access properties
+      console.log(person1.name);
+      console.log(person2.age);
+    </script>
+  </body>
+</html>

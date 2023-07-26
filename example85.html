@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>this with Arrow Function</title>
+  </head>
+  <body>
+    <script>
+      function Person() {
+        (this.name = "Jack"),
+          (this.age = 25),
+          (this.sayName = function () {
+            // this is accessible
+            console.log(this.age);
+
+            function innerFunc() {
+              // this refers to the global object
+              console.log(this.age);
+              console.log(this);
+            }
+
+            innerFunc();
+          });
+      }
+
+      let x = new Person();
+      x.sayName();
+    </script>
+  </body>
+</html>

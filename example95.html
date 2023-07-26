@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default parameter values</title>
+  </head>
+  <body>
+    <script>
+      function sum(x, y = 5) {
+        console.log(x + y);
+      }
+      sum(5); //10
+      sum(5, 15); //15
+    </script>
+  </body>
+</html>

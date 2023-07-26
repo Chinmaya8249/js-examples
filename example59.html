@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>update values of properties</title>
+  </head>
+  <body>
+    <script>
+      const salaries = {
+        jack: 24000,
+        paul: 34000,
+        monica: 55000,
+      };
+
+      for (let i in salaries) {
+        let salary = "$" + salaries[i];
+
+        console.log(`${i}:${salary}`);
+      }
+    </script>
+  </body>
+</html>

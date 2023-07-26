@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rest of the object will attached in destructuring way</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        name: "chinu",
+        age: 23,
+        gender: "male",
+      };
+
+      let { name, ...rest } = person;
+
+      console.log(name);
+      console.log(rest);
+    </script>
+  </body>
+</html>

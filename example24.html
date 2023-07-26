@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>this keyword use</title>
+  </head>
+  <body>
+    <script>
+      var person = {
+        name: "chinmaya",
+        Age: 24,
+        greet: function () {
+          let sureName = "chinu";
+          console.log("the name is" + "" + this.name + "sureName");
+        },
+      };
+
+      person.greet();
+    </script>
+  </body>
+</html>

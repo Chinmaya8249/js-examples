@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript getter</title>
+  </head>
+  <body>
+    <script>
+      const student = {
+        firstName: "monica",
+
+        get getName() {
+          return this.firstName;
+        },
+      };
+
+      console.log(student.firstName);
+
+      console.log(student.getName);
+
+      console.log(student.getName());
+    </script>
+  </body>
+</html>

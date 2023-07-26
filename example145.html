@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program with promise</title>
+</head>
+<body>
+    <script>
+        const count=true;
+
+        let countValue=new Promise(function(resolve,reject){
+            if(count){
+                resolve('there is a count value');
+            }else{
+                reject('there is no count value');
+            }
+        });
+
+        console.log(countValue);
+    </script>
+</body>
+</html>

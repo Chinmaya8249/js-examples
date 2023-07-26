@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nested element access</title>
+  </head>
+  <body>
+    <div class="parent">
+      <h1 class="heading">javascript is awesome</h1>
+    </div>
+  </body>
+  <script>
+    //traverse dom
+    //1.parent node
+    // const heading = document.querySelector(".parent");
+    // console.log(heading.parentNode );
+
+    //2.child node
+
+    const parent = document.querySelector(".parent");
+
+    console.log(parent.childNodes);
+  </script>
+</html>

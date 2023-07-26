@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js promises</title>
+  </head>
+  <body>
+    <script>
+      // returns a promise
+      let countValue = new Promise(function (resolve, reject) {
+        reject("Promise rejected");
+      });
+
+      // executes when promise is resolved successfully
+      countValue.then(function successValue(result) {
+        console.log(result); // Promise resolved
+      });
+    </script>
+  </body>
+</html>

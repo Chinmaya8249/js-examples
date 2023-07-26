@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>addEventsListner</title>
+  </head>
+  <body>
+    <div class="parent">
+      <h1 id="heading">js is awesome</h1>
+      <button id="btn">Click me</button>
+    </div>
+  </body>
+  <script>
+    //dom events
+    const button = document.querySelector("#btn");
+    const heading = document.querySelector("#heading");
+
+    button.addEventListener("click", function (event) {
+      heading.style.color = "purple";
+
+      heading.style.fontSize = "60px";
+      console.log("button clicked", event);
+    });
+  </script>
+</html>
